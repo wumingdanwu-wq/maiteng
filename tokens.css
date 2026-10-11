@@ -1,0 +1,31 @@
+:root {
+  --color-paper: oklch(97.5% .005 250);
+  --color-surface: oklch(99.5% .002 250);
+  --color-ink: oklch(25% .025 258);
+  --color-muted: oklch(46% .025 258);
+  --color-rule: oklch(87% .015 250);
+  --color-accent: oklch(48% .17 258);
+  --color-accent-ink: oklch(99% .002 250);
+  --color-tint: oklch(94% .025 258);
+  --color-rail: oklch(25% .035 258);
+  --color-rail-muted: oklch(77% .02 250);
+  --color-rail-active: oklch(35% .045 258);
+  --color-warn: oklch(41% .09 67);
+  --color-warn-bg: oklch(96% .033 87);
+  --color-error: oklch(44% .16 25);
+  --color-error-bg: oklch(96% .02 25);
+  --color-success: oklch(40% .085 162);
+  --color-focus: oklch(35% .13 258);
+  --color-clear: oklch(100% 0 0 / 0);
+  --color-overlay: oklch(20% .03 258 / .48);
+  --font-body: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif;
+  --font-display: "Bahnschrift", "DIN Alternate", "Microsoft YaHei", sans-serif;
+  --font-mono: Consolas, "SFMono-Regular", monospace;
+  --space-xs: 4px; --space-sm: 8px; --space-md: 16px; --space-lg: 24px;
+  --space-xl: 32px; --space-2xl: 48px; --space-3xl: 64px;
+  --radius-sm: 6px; --radius-md: 12px;
+  --ease-out: cubic-bezier(.16,1,.3,1);
+  --ease-in: cubic-bezier(.7,0,.84,0);
+  --ease-in-out: cubic-bezier(.65,0,.35,1);
+  --dur-micro: 120ms;
+}
