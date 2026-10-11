@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 2,
+  "loan": {
+    "monthlyPayment": 1667,
+    "firstPayment": "2026-10-20",
+    "paidThrough": "",
+    "interestFreeEnd": "2028-09-02"
+  },
+  "vehicle": {
+    "model": "迈腾 2025款 280TSI DSG舒适型",
+    "productionMonth": "2025-08",
+    "deliveryDate": "2026-09-28",
+    "invoiceModel": "FV7147FADEG",
+    "vinSuffix": "6525",
+    "mileage": 0,
+    "verified": true
+  },
+  "purchase": {
+    "price": 112400,
+    "tax": 9900,
+    "insuranceAndRegistration": 5500,
+    "subsidy": 6720,
+    "subsidyReceived": false,
+    "verified": true
+  },
+  "reminders": {
+    "date": "2026-12-28",
+    "mileage": 5000,
+    "note": ""
+  },
+  "fuelRecords": [
+    {
+      "id": "excel-row-2",
+      "date": "2026-09-28",
+      "mileage": 0,
+      "amount": 560,
+      "note": "仅有560元金额，其余信息待补充。",
+      "station": "萍乡市中源石油金三角加油站",
+      "grade": "92",
+      "liters": 65.42,
+      "full": true
+    }
+  ],
+  "maintenanceRecords": [],
+  "insuranceRecords": [],
+  "updatedAt": "2026-10-07T10:49:01.466Z"
+}

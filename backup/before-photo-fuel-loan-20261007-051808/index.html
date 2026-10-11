@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#172438">
+  <title>迈腾数字车库</title>
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="js/core.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <aside class="sidebar">
+    <a class="brand" href="#overview" aria-label="迈腾数字车库首页"><span class="brand-mark" aria-hidden="true">M</span><span>迈腾<span class="brand-small">数字车库</span></span></a>
+    <nav aria-label="主要导航">
+      <a href="#overview" data-page="overview"><span aria-hidden="true">◫</span>用车总览</a>
+      <a href="#fuel" data-page="fuel"><span aria-hidden="true">↗</span>加油账本</a>
+      <a href="#maintenance" data-page="maintenance"><span aria-hidden="true">◇</span>保养记录</a>
+      <a href="#profile" data-page="profile"><span aria-hidden="true">▤</span>车辆档案</a>
+      <a href="#documents" data-page="documents"><span aria-hidden="true">▱</span>资料与备份</a>
+    </nav>
+    <div class="sidebar-bottom"><span class="small-line">我的日常用车记录</span><p>每一程，都有记录。</p><span class="version">本地版 · 1.0</span></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span id="breadcrumb">我的车库 / 用车总览</span><span id="save-state" role="status">本地档案</span></header>
+    <main id="main" tabindex="-1">
+      <div id="storage-warning" class="notice danger" hidden></div>
+      <div id="app"><h1>迈腾数字车库</h1><p>正在打开车辆档案…</p><p>若此提示一直显示，请将压缩包完整解压后再打开 index.html，确保 css 和 js 文件夹位于它旁边。</p></div>
+      <noscript><p class="notice danger">请在浏览器中允许 JavaScript，才能使用记录和统计功能。</p></noscript>
+    </main>
+    <footer><span>迈腾数字车库</span><span>记录保存在当前浏览器，请定期导出备份。</span></footer>
+  </div>
+  <dialog id="editor" aria-labelledby="dialog-title"><div class="dialog-heading"><h2 id="dialog-title">编辑记录</h2><button type="button" class="icon-button" data-action="close-dialog" aria-label="关闭窗口">×</button></div><form id="record-form"><div id="form-fields"></div><p id="form-error" class="form-error" role="alert"></p><div class="dialog-actions"><button type="button" class="button" data-action="close-dialog">取消</button><button type="submit" class="button primary">保存记录</button></div></form></dialog>
+  <dialog id="import-dialog" aria-labelledby="import-title"><h2 id="import-title">导入备份</h2><p id="import-summary"></p><p>导入会替换当前浏览器中的记录。替换前会保留一份可恢复的旧版本，也建议先导出备份。</p><div class="dialog-actions"><button class="button" data-action="cancel-import">取消</button><button class="button" data-action="export">先导出当前数据</button><button class="button primary" data-action="confirm-import">确认替换</button></div></dialog>
+  <input type="file" id="import-file" accept=".json,application/json" hidden>
+  <div id="message" class="message" role="status" hidden><span id="message-text"></span><button id="undo" class="button" hidden>撤销</button><button class="icon-button" data-action="dismiss" aria-label="关闭提示">×</button></div>
+  <script id="initial-data" type="application/json">
+  {"schemaVersion":2,"vehicle":{"model":"迈腾 2025款 280TSI DSG舒适型","productionMonth":"2025-08","deliveryDate":"2026-09-28","invoiceModel":"FV7147FADEG","vinSuffix":"6525","mileage":null,"verified":false},"purchase":{"price":112400,"tax":9900,"insuranceAndRegistration":5500,"subsidy":6600,"subsidyReceived":false,"verified":false},"fuelRecords":[{"id":"excel-row-2","date":"","mileage":null,"station":"","grade":"","amount":560,"liters":null,"full":false,"note":"来自现有加油记录.xlsx 第2行。仅有560元金额，其余信息待补充。"}],"maintenanceRecords":[],"insuranceRecords":[],"reminders":{"date":"","mileage":null,"note":""},"updatedAt":null}
+  </script>
+</body>
+</html>
